@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square and Cube Practice Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Square and Cube Practice Game</h1>
+
+        <div class="range-input">
+            <h3>Enter the number range for the game (e.g. 10 - 30):</h3>
+            <label for="minRange">Min: </label>
+            <input type="number" id="minRange" min="1" max="100" value="10">
+            <label for="maxRange">Max: </label>
+            <input type="number" id="maxRange" min="10" max="100" value="30">
+        </div>
+
+        <div class="game-options">
+            <button id="squareGameBtn" class="game-btn">Start Square Game</button>
+            <button id="cubeGameBtn" class="game-btn">Start Cube Game</button>
+        </div>
+
+        <div id="gameArea" class="game-section" style="display:none;">
+            <h3 id="question"></h3>
+            <input type="number" id="userAnswer" placeholder="Enter your answer">
+            <button id="submitAnswer">Submit</button>
+            <div id="result"></div>
+        </div>
+
+        <div id="analyticsSection" style="display:none;">
+            <h3>Game Analytics</h3>
+            <p id="correctAnswers">Correct Answers: 0</p>
+            <p id="incorrectAnswers">Incorrect Answers: 0</p>
+            <p id="averageTime">Average Time per Question: 0 seconds</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

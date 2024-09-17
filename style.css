@@ -1,0 +1,202 @@
+ /* Set the basic style for the page */
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for the game */
+.container {
+    max-width: 600px;
+    width: 85%;
+    background-color: #f1f1f1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Range input section */
+.range-input {
+    margin-bottom: 20px;
+}
+
+.range-input label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.range-input input {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Game button styles */
+.game-options {
+    margin-bottom: 20px;
+}
+
+.game-btn {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.game-btn.selected {
+    background-color: #ff0000;
+}
+
+.game-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Game area */
+.game-section {
+    margin-top: 20px;
+    width: 97%;
+}
+
+#userAnswer {
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submitAnswer {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#submitAnswer:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Analytics section */
+#analyticsSection {
+    margin-top: 30px;
+}
+
+#analyticsSection p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .game-btn {
+        font-size: 1rem;
+    }
+
+    #userAnswer {
+        font-size: 1rem;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 85%;
+        height: 25.5rem;
+        background-color: #f1f1f1;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    #submitAnswer {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    .range-input {
+        margin-bottom: 20px;
+        width: 55%;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 85%;
+        height: 90%;
+        background-color: #f1f1f1;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .game-section {
+        margin-top: 20px;
+        width: 93%;
+    }
+
+    .game-btn {
+        font-size: 0.9rem;
+    }
+
+    #userAnswer {
+        font-size: 0.9rem;
+    }
+
+    #submitAnswer {
+        font-size: 0.9rem;
+    }
+}
